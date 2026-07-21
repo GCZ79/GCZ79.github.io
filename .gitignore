@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
