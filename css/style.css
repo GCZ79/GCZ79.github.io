@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     background: #eef2f7;
     color: #333;
     line-height: 1.6;
@@ -21,15 +21,17 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
 }
-    nav a {
-        color: white;
-        text-decoration: none;
-        padding: 15px 20px;
-        font-weight: bold;
-    }
-        nav a:hover {
-            background: #2958a6;
-        }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #2958a6;
+}
 
 /* Main content */
 main {
@@ -45,6 +47,41 @@ section {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,.10);
     margin-bottom: 30px;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: #f8f9fb;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #0b3d91;
+}
+
+.card h3 {
+    color: #0b3d91;
+}
+
+.card a {
+    color: #0b3d91;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Code */
+code, pre {
+    font-family: Consolas, "Courier New", monospace;
 }
 
 /* Headings */

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms & Data Structures Enhancement | Giuseppe Claudio Zema</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Giuseppe Claudio Zema</h1>
+        <p>Bachelor of Science in Software Engineering</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="self-assessment.html">Self Assessment</a>
+        <a href="artifact.html">Artifact</a>
+        <a href="software.html">Software</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="databases.html">Databases</a>
+        <a href="code-review.html">Code Review</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Algorithms & Data Structures Enhancement</h2>
+            <p>
+                The algorithms and data structures enhancement focused on improving the
+                performance and scalability of the Grazioso Salvare Animal Rescue Dashboard.
+                The original application relied heavily on client-side processing, which
+                created performance limitations as the dataset increased.
+            </p>
+
+            <p>
+                The enhancement introduced more efficient data retrieval strategies by moving
+                processing responsibilities to the database layer and implementing optimized
+                data structures for frequently accessed information.
+            </p>
+        </section>
+
+        <section>
+            <h2>Performance Challenges Identified</h2>
+            <p>
+                The original application had several performance limitations:
+            </p>
+
+            <ul>
+                <li>
+                    Large amounts of data processing occurred on the client side.
+                </li>
+                <li>
+                    Database queries relied primarily on collection scans.
+                </li>
+                <li>
+                    Pagination required transferring unnecessary records.
+                </li>
+                <li>
+                    Frequently requested filters repeated identical database operations.
+                </li>
+            </ul>
+
+            <p>
+                These limitations affected response time and reduced scalability as the
+                dataset size increased.
+            </p>
+        </section>
+
+        <section>
+            <h2>Implemented Algorithm Improvements</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>MongoDB Compound Indexes</h3>
+                    <p>
+                        Implemented compound indexes on frequently queried fields:
+                    </p>
+
+                    <ul>
+                        <li>animal_type</li>
+                        <li>breed</li>
+                        <li>sex_upon_outcome</li>
+                        <li>age_upon_outcome_in_weeks</li>
+                    </ul>
+
+                    <p>
+                        Indexes improve query efficiency by reducing the amount of data MongoDB must
+                        scan when retrieving matching records.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Aggregation Pipelines</h3>
+                    <p>
+                        Moved filtering and data transformation operations from the frontend to
+                        MongoDB aggregation pipelines.
+                    </p>
+
+                    <p>
+                        Operations such as matching, projection, grouping, and sorting are now
+                        performed closer to the data source, reducing unnecessary data transfer.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Server-Side Pagination</h3>
+                    <p>
+                        Implemented pagination using MongoDB skip() and limit() operations.
+                    </p>
+
+                    <p>
+                        This allows the application to retrieve only the records required for the
+                        current page instead of loading the entire dataset.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>LRU Cache Implementation</h3>
+                    <p>
+                        Added a Least Recently Used (LRU) cache using JavaScript Map to store
+                        frequently accessed rescue and training filter results.
+                    </p>
+
+                    <p>
+                        The cache improves response times for repeated requests while limiting memory
+                        usage through a fixed capacity.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data Structure Design</h2>
+            <p>
+                The LRU cache uses a JavaScript Map data structure to maintain recently
+                accessed values. When a cached item is accessed, it is moved to the most
+                recent position. When the cache reaches capacity, the least recently used
+                entry is removed.
+            </p>
+
+            <p>
+                This approach provides efficient lookup and update operations while preventing
+                uncontrolled memory growth.
+            </p>
+        </section>
+
+        <section>
+            <h2>Complexity Analysis</h2>
+            <ul>
+                <li>
+                    MongoDB indexed queries reduce lookup complexity compared with full collection
+                    scans.
+                </li>
+                <li>
+                    LRU cache retrieval provides approximately O(1) lookup performance through
+                    Map-based storage.
+                </li>
+                <li>
+                    Server-side pagination reduces unnecessary processing by limiting returned
+                    records.
+                </li>
+                <li>
+                    Aggregation pipelines improve efficiency by processing data before it reaches
+                    the application layer.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Performance and Scalability Trade-offs</h2>
+            <p>
+                The implemented improvements increase application performance and scalability,
+                but introduce additional design considerations.
+            </p>
+
+            <ul>
+                <li>
+                    Indexes improve query speed but require additional database storage.
+                </li>
+                <li>
+                    Caching improves response time but requires cache invalidation strategies.
+                </li>
+                <li>
+                    Server-side pagination improves scalability but adds backend complexity.
+                </li>
+                <li>
+                    Aggregation pipelines improve efficiency but require careful query design.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills Demonstrated</h2>
+            <ul>
+                <li>Algorithm optimization</li>
+                <li>Data structure implementation</li>
+                <li>Database performance analysis</li>
+                <li>Scalable application design</li>
+                <li>Performance trade-off evaluation</li>
+                <li>Efficient data retrieval strategies</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Supporting Evidence</h2>
+            <p>
+                Supporting evidence will include database index configurations,
+                performance testing results, API benchmarks, and source code examples from
+                the enhanced capstone application.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Giuseppe Claudio Zema</p>
+    </footer>
+</body>
+</html>
