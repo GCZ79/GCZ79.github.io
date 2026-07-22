@@ -2,57 +2,23 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Artifact | Giuseppe Claudio Zema</title>
-
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
-
 <body>
-
-
-    <header>
-
-        <h1>Giuseppe Claudio Zema</h1>
-
-        <p>Bachelor of Science in Software Engineering</p>
-
-    </header>
-
-
-    <nav>
-
-        <a href="index.html">Home</a>
-        <a href="self-assessment.html">Self Assessment</a>
-        <a href="artifact.html">Artifact</a>
-        <a href="software.html">Software</a>
-        <a href="algorithms.html">Algorithms</a>
-        <a href="databases.html">Databases</a>
-        <a href="code-review.html">Code Review</a>
-
-    </nav>
-
-
+    <div id="header"></div>
 
     <main>
-
-
         <section>
-
-            <h2>Capstone Artifact</h2>
-
-
+            <h2>Capstone Project</h2>
             <p>
                 The artifact selected for my CS-499 Capstone Project is the Grazioso Salvare
                 Animal Rescue Dashboard originally developed during CS-340: Client/Server
                 Development.
             </p>
-
 
             <p>
                 The original application was a Python-based dashboard that connected to a
@@ -60,107 +26,63 @@
                 users to search, filter, and visualize animal rescue data through an
                 interactive dashboard interface.
             </p>
-
-
         </section>
 
-
-
         <section>
-
             <h2>Original Artifact</h2>
-
-
             <p>
                 The original project demonstrated foundational skills in database interaction,
                 CRUD operations, and data visualization. However, several limitations were
                 identified during the code review process:
             </p>
 
-
             <ul>
-
                 <li>
                     Limited scalability due to client-side data processing.
                 </li>
-
                 <li>
                     Lack of authentication and authorization controls.
                 </li>
-
                 <li>
                     Limited software architecture separation.
                 </li>
-
                 <li>
                     Minimal automated testing coverage.
                 </li>
-
                 <li>
                     Performance limitations when handling larger datasets.
                 </li>
-
             </ul>
-
-
         </section>
 
-
-
-
         <section>
-
             <h2>Enhanced Artifact</h2>
-
-
             <p>
                 The enhanced version transformed the original dashboard into a modern
                 full-stack web application using the MEAN stack:
             </p>
 
-
             <ul>
-
                 <li>MongoDB database</li>
-
                 <li>Express.js REST API</li>
-
                 <li>Angular frontend application</li>
-
                 <li>Node.js backend services</li>
-
                 <li>JWT authentication</li>
-
                 <li>Role-based authorization</li>
-
             </ul>
-
 
             <p>
                 The enhanced application improves maintainability, security, scalability,
                 and user experience while demonstrating advanced software engineering
                 practices.
             </p>
-
-
         </section>
 
-
-
-
         <section>
-
             <h2>Enhancement Categories</h2>
-
-
             <div class="card-container">
-
-
-
                 <div class="card">
-
                     <h3>Software Design & Engineering</h3>
-
                     <p>
                         The application architecture was redesigned using a full-stack MEAN approach.
                         Additional improvements included authentication, route guards, API design,
@@ -168,87 +90,64 @@
                     </p>
 
                     <a href="software.html">View Enhancement</a>
-
                 </div>
 
-
-
                 <div class="card">
-
                     <h3>Algorithms & Data Structures</h3>
-
                     <p>
                         Performance improvements were implemented through database indexing,
                         aggregation pipelines, server-side pagination, and an LRU caching strategy.
                     </p>
 
                     <a href="algorithms.html">View Enhancement</a>
-
                 </div>
 
-
-
                 <div class="card">
-
                     <h3>Database Design</h3>
-
                     <p>
                         Database improvements include advanced MongoDB features, validation,
                         optimization techniques, and improved data management practices.
                     </p>
 
                     <a href="databases.html">View Enhancement</a>
-
                 </div>
-
-
             </div>
-
-
         </section>
-
-
 
         <section>
-
             <h2>Artifact Resources</h2>
-
-
             <p>
-                The original and enhanced project versions, supporting documentation,
-                and demonstration materials will be available below.
+                The original and enhanced project versions, supporting documentation, and
+                demonstration materials are available below.
             </p>
 
-
             <ul>
-
-                <li>Original CS-340 Project</li>
-
-                <li>Enhanced CS-499 Capstone Project</li>
-
-                <li>Project Documentation</li>
-
-                <li>Code Review Presentation</li>
-
+                <li>
+                    <a href="https://github.com/GCZ79/Dashboard-for-MongoDB" target="_blank">
+                        Original CS-340 Project
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/GCZ79/CS499_Capstone" target="_blank">
+                        Enhanced CS-499 Capstone Project
+                    </a>
+                </li>
+                <li>
+                    <a href="docs/CS499_Capstone_Documentation.pdf" target="_blank">
+                        🚧 Project Documentation 🚧
+                    </a>
+                </li>
+                <li>
+                    <a href="code-review.html">
+                        Code Review Presentation
+                    </a>
+                </li>
             </ul>
-
-
         </section>
-
-
-
     </main>
 
-
-
-    <footer>
-
-        <p>&copy; 2026 Giuseppe Claudio Zema</p>
-
-    </footer>
-
-
+    <div id="footer"></div>
+    <script src="js/include.js"></script>
 
 </body>
-
 </html>

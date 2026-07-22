@@ -9,20 +9,7 @@
 </head>
 
 <body>
-    <header>
-        <h1>Giuseppe Claudio Zema</h1>
-        <p>Bachelor of Science in Software Engineering</p>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="self-assessment.html">Self Assessment</a>
-        <a href="artifact.html">Artifact</a>
-        <a href="software.html">Software</a>
-        <a href="algorithms.html">Algorithms</a>
-        <a href="databases.html">Databases</a>
-        <a href="code-review.html">Code Review</a>
-    </nav>
+    <div id="header"></div>
 
     <main>
         <section>
@@ -51,14 +38,16 @@
                 and database improvements.
             </p>
 
-            <iframe width="800"
-                    height="450"
-                    src="https://www.youtube.com/embed/k72KqktewAQ"
-                    title="CS-499 Code Review"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>
+            <div class="video-container">
+
+                <iframe src="https://www.youtube.com/embed/k72KqktewAQ"
+                        title="CS-499 Code Review"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+
+            </div>
         </section>
 
         <section>
@@ -163,9 +152,8 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Giuseppe Claudio Zema</p>
-    </footer>
+    <div id="footer"></div>
+    <script src="js/include.js"></script>
 
 </body>
 </html>
