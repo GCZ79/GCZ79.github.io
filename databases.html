@@ -54,70 +54,100 @@
         </section>
 
         <section>
-            <h2>🚧 Planned Database Improvements 🚧</h2>
+            <h2>Implemented Enhancements</h2>
+
             <div class="card-container">
                 <div class="card">
-                    <h3>Data Validation</h3>
+                    <h3>JSON Schema Validation</h3>
                     <p>
-                        Implement stronger database validation rules to improve data consistency
-                        and prevent invalid records from entering the system.
+                        Added MongoDB JSON Schema validation to enforce required fields,
+                        data types, and value constraints for improved data integrity.
                     </p>
                 </div>
 
                 <div class="card">
-                    <h3>Database Optimization</h3>
+                    <h3>Database Design</h3>
                     <p>
-                        Continue improving database performance through optimized queries,
-                        indexing strategies, and efficient data access patterns.
+                        Redesigned the database by introducing a one-to-many relationship
+                        between animals and training records using separate collections.
                     </p>
                 </div>
 
                 <div class="card">
-                    <h3>Advanced MongoDB Features</h3>
+                    <h3>MongoDB Joins</h3>
                     <p>
-                        Expand the database implementation by incorporating additional MongoDB
-                        features and improved administration practices.
+                        Implemented MongoDB <code>$lookup</code> aggregation joins to
+                        retrieve related animal and training data while maintaining a
+                        normalized database structure.
                     </p>
+                </div>
+
+                <div class="card">
+                    <h3>Role-Based Access Control</h3>
+
+                    <p>
+                        Implemented role-based access control (RBAC) to restrict
+                        administrative database operations based on user permissions.
+                    </p>
+
+                    <div class="image-gallery">
+                        <div class="image-item">
+                            <h4>Administrator</h4>
+                            <img class="zoom-image" src="images/admin.png" alt="Administrator Dashboard">
+                        </div>
+
+                        <div class="image-item">
+                            <h4>Public User</h4>
+                            <img class="zoom-image" src="images/public.png" alt="Public Dashboard">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>🚧 Completed Enhancements 🚧</h2>
-            <p>
-                This section will be updated after completion of the database enhancement
-                phase of the CS-499 Capstone Project.
-            </p>
-            <p>
-                Final documentation will include:
-            </p>
-            <ul>
-                <li>Database design decisions</li>
-                <li>Validation implementation</li>
-                <li>Performance improvements</li>
-                <li>Testing evidence</li>
-                <li>Scalability considerations</li>
-            </ul>
+            <div class="content-with-image">
+                <div class="content-text">
+                    <h2>Skills Demonstrated</h2>
+
+                    <ul>
+                        <li>MongoDB schema validation</li>
+                        <li>Database normalization</li>
+                        <li>One-to-many relationship design</li>
+                        <li>Aggregation pipelines with <code>$lookup</code></li>
+                        <li>Role-based access control (RBAC)</li>
+                        <li>Database administration</li>
+                    </ul>
+                </div>
+
+                <img class="side-image"
+                     src="images/JSON schema validation(cut).png"
+                     alt="JSON schema validation">
+            </div>
         </section>
 
         <section>
-            <h2>Skills Demonstrated</h2>
+            <h2>Supporting Evidence</h2>
+            <p>
+                The following documentation provides additional details about the database
+                enhancements implemented during the capstone project.
+            </p>
+
             <ul>
-                <li>Database design principles</li>
-                <li>NoSQL database management</li>
-                <li>Data validation strategies</li>
-                <li>Database scalability considerations</li>
-                <li>Data integrity improvement</li>
+                <li>
+                    🚧
+                    <a href="docs/Database_Enhancement.pdf" target="_blank">
+                        Database Enhancement Documentation
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/GCZ79/CS499_Capstone/tree/feature/enh_databases" target="_blank">
+                        Source Code Repository: GitHub | Branch: feature/enh_databases
+                    </a>
+                </li>
             </ul>
         </section>
 
-        <section>
-            <h2>🚧 Supporting Evidence 🚧</h2>
-            <p>
-                Screenshots, database configurations, testing results, and implementation
-                details will be added after the enhancement is completed.
-            </p>
-        </section>
     </main>
 
     <div id="footer"></div>
