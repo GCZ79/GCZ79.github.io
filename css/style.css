@@ -177,6 +177,17 @@ section {
     border: 1px solid #ddd;
 }
 
+.image-column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-column .side-image {
+    width: 100%;
+}
+
 /* Cards */
 .card-container {
     display: flex;
@@ -305,8 +316,12 @@ h2 {
 }
 
 h3 {
+    color: #0b3d91;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #e1e7f0;
+    padding-bottom: 8px;
 }
 
 /* Footer */
